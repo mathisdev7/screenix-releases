@@ -10,7 +10,7 @@ Professional screen recorder for Linux with smooth zoom effects, cursor tracking
 curl -fsSL screenix.studio/install | sh
 ```
 
-The installer auto-detects your distro and installs the right package (.deb or AUR).
+The installer auto-detects your distro and installs the right package (.deb, .rpm or AUR).
 
 ### Manual Install
 
