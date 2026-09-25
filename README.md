@@ -27,10 +27,10 @@ yay -S screenix-bin
 
 #### NixOS (x86-64)
 ```bash
-nix profile add github:mathisdev7/screenix-releases#screenix-bin
+nix --extra-experimental-features 'nix-command flakes' profile add github:mathisdev7/screenix-releases#screenix-bin
 ```
 
-Update it with `nix profile upgrade --refresh screenix-bin`. The Nix flake packages the same published `.deb` binary; it does not include the private Screenix source code.
+Update it with `nix --extra-experimental-features 'nix-command flakes' profile upgrade --refresh screenix-bin`. The Nix flake packages the same published `.deb` binary; it does not include the private Screenix source code.
 
 ### Run
 
