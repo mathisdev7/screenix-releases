@@ -10,7 +10,7 @@ Professional screen recorder for Linux with smooth zoom effects, cursor tracking
 curl -fsSL screenix.studio/install | sh
 ```
 
-The installer auto-detects your distro and installs the right package (.deb, .rpm or AUR).
+The installer auto-detects your distro and installs the right package (.deb, .rpm, AUR, or Nix flake).
 
 ### Manual Install
 
@@ -24,6 +24,13 @@ sudo dpkg -i Screenix_*_amd64.deb
 ```bash
 yay -S screenix-bin
 ```
+
+#### NixOS (x86-64)
+```bash
+nix profile add github:mathisdev7/screenix-releases#screenix-bin
+```
+
+Update it with `nix profile upgrade screenix-bin`. The Nix flake packages the same published `.deb` binary; it does not include the private Screenix source code.
 
 ### Run
 
