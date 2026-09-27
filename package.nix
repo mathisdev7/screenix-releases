@@ -110,6 +110,8 @@ stdenv.mkDerivation (finalAttrs: {
     runHook preInstall
     mkdir -p "$out"
     cp -a usr/. "$out/"
+    substituteInPlace "$out/share/applications/Screenix.desktop" \
+      --replace-fail "Icon=screenix-gui" "Icon=$out/share/icons/hicolor/128x128/apps/screenix-gui.png"
     runHook postInstall
   '';
 
