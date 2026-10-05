@@ -20,6 +20,7 @@
   gst_all_1,
   glib-networking,
   ffmpeg,
+  tesseract,
   grim,
   gnome-screenshot,
   xdotool,
@@ -46,6 +47,7 @@ let
   ];
   runtimePrograms = [
     ffmpeg
+    tesseract
     grim
     gnome-screenshot
     xdotool
@@ -65,11 +67,11 @@ let
 in
 stdenv.mkDerivation (finalAttrs: {
   pname = "screenix-bin";
-  version = "1.8.1";
+  version = "1.8.2";
 
   src = fetchurl {
     url = "https://github.com/mathisdev7/screenix-releases/releases/download/v${finalAttrs.version}/Screenix_${finalAttrs.version}_amd64.deb";
-    sha256 = "6647020ec9ae83cc901931ed05d0b0a4b3c814f9be82bcfa3781ffec1b31d815";
+    sha256 = "b34ba2d62315f4697405fa0bbb505c20dcd03454586718d7f431f6292e2c5e96";
   };
 
   nativeBuildInputs = [
