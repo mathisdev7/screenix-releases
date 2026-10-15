@@ -67,11 +67,11 @@ let
 in
 stdenv.mkDerivation (finalAttrs: {
   pname = "screenix-bin";
-  version = "1.8.3";
+  version = "1.9.0";
 
   src = fetchurl {
     url = "https://github.com/mathisdev7/screenix-releases/releases/download/v${finalAttrs.version}/Screenix_${finalAttrs.version}_amd64.deb";
-    sha256 = "ea28cbe604f41d9ffa31d5e6d625d8f14c3b0fc6ba4f077919dbb6a7ad8f2a48";
+    sha256 = "5111a9dbd2b26ecd8aef3749ca0d2c5dae872114dd952fe285ff4160af2f7d26";
   };
 
   nativeBuildInputs = [
