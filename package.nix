@@ -71,7 +71,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   src = fetchurl {
     url = "https://github.com/mathisdev7/screenix-releases/releases/download/v${finalAttrs.version}/Screenix_${finalAttrs.version}_amd64.deb";
-    sha256 = "78f64c9f746fa8c599feaaa351c47aad71e8114ffc89d6ea1bf657991fe17136";
+    sha256 = "70fee41d6249207b4530036868ffa983667b1e0a586882e80e3ad3fb1f2c819c";
   };
 
   nativeBuildInputs = [
